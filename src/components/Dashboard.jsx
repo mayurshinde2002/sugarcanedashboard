@@ -40,7 +40,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("/converted_chat_2.json");
+      const res = await fetch("/merged_converted_chat_2_with_31st_September_updated.json");//converted_chat_2.json
       const json = await res.json();
       setData(json);
       setLoading(false);
@@ -1633,4 +1633,5 @@ export default function Dashboard() {
       </div>
     </div>
   );
+
 }
